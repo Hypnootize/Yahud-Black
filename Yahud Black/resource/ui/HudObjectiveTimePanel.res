@@ -30,16 +30,10 @@
 		"ControlName"			"CTFProgressBar"
 		"fieldName"			"TimePanelProgressBar"
 		"xpos"				"67"
-		"xpos_hidef"		"159"
-		"xpos_lodef"		"165"
 		"ypos"				"14"
-		"ypos_hidef"		"13"
-		"ypos_lodef"		"14"
 		"zpos"				"4"	
 		"wide"				"20"
-		"wide_lodef"		"25"
 		"tall"				"20"
-		"tall_lodef"		"25"	
 		"visible"			"0"
 		"enabled"			"0"
 		"scaleImage"			"1"
@@ -84,12 +78,9 @@
 		"fieldName"		"WaitingForPlayersBG"
 		"xpos"			"38"	
 		"ypos"			"28"
-		"ypos_hidef"	"-100"	//off-screen
-		"ypos_lodef"	"-100"	//off-screen
 		"zpos"			"1"
 		"wide"			"0"
 		"tall"			"0"
-		"tall_minmode"	"0"
 		"visible"		"0"
 		"enabled"		"0"
 		"image"			"../hud/objectives_timepanel_suddendeath"	
@@ -130,8 +121,6 @@
 		"fieldName"		"OvertimeBG"
 		"xpos"			"16"	
 		"ypos"			"29"
-		"ypos_hidef"	"-100"	//off-screen
-		"ypos_lodef"	"-100"	//off-screen
 		"zpos"			"1"
 		"wide"			"0"
 		"tall"			"0"
@@ -175,8 +164,6 @@
 		"fieldName"		"SuddenDeathBG"
 		"xpos"			"16"	
 		"ypos"			"29"
-		"ypos_hidef"	"-100"	//off-screen
-		"ypos_lodef"	"-100"	//off-screen
 		"zpos"			"1"
 		"wide"			"0"
 		"tall"			"0"
@@ -220,8 +207,6 @@
 		"fieldName"		"SetupBG"
 		"xpos"			"16"	
 		"ypos"			"29"
-		"ypos_hidef"	"-100"	//off-screen
-		"ypos_lodef"	"-100"	//off-screen
 		"zpos"			"1"
 		"wide"			"0"
 		"tall"			"0"
@@ -234,5 +219,48 @@
 		{
 			"xpos"		"9999"
 		}
+	}
+	
+	"ServerTimeLimitLabel"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"ServerTimeLimitLabel"
+		"xpos"			"51"
+		"ypos"			"13"
+		"zpos"			"5"
+		"wide"			"50"
+		"tall"			"20"
+		"visible"		"0"
+		"enabled"		"1"
+		"labelText"		"%servertimeleft%"
+		"textAlignment"	"center"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"wrap"			"0"
+		"font"			"Regular11"
+		"fgcolor"		"White"
+		
+		if_match
+		{
+			
+		}
 	}	
+	"ServerTimeLimitLabelBG"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"ServerTimeLimitLabelBG"
+		"xpos"			"9999"
+		"ypos"			"0"
+		"zpos"			"1"
+		"wide"			"38"
+		"tall"			"13"
+		"visible"		"0"
+		"enabled"		"0"
+		"fillcolor"		"0 0 0 100"
+		
+		if_match
+		{
+			"xpos"	"9999"
+		}
+	}
 }
